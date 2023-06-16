@@ -121,7 +121,7 @@ a {
     .article>h3 {
         font-size: 2em;
     }
-    p {
+    p, li {
         font-size: 18px;
     }
     
@@ -134,7 +134,7 @@ a {
     .article>h3 {
         font-size: 2em;
     }
-    p {
+    p, li {
         font-size: 18px;
     }
     
@@ -148,7 +148,7 @@ a {
         font-size: 1.5em;
     }
     
-    p {
+    p, li {
         font-size: 18px;
     }
 }
