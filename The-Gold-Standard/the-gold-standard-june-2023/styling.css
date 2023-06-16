@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'ITC Avant Garde Std Bk-y4IYhiFJ';
+    font-style: normal; 
+    font-weight: 400; 
+    src: url('./fonts/ec216a08-3936-4533-bd1d-909774810dac/itc-itcavantgardestd-bk.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Std Bk-EFVqoG5Y';
+    font-style: normal; 
+    font-weight: 400; 
+    unicode-range: ;
+    src: url('./fonts/94272e78-e922-4ccd-954c-2d1972c9bdd9/itc-itcavantgardestd-demi.woff') format('woff');
+}
+
+body {
+    width: 913px;
+    font-family: "ITC Avant Garde Std Bk-y4IYhiFJ", sans-serif;
+}
+p, li {
+    font-size: 22px;
+}
+a {
+    color: inherit;
+}
+.divider {
+    background-image: url("./media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-quarter.png");
+    display: block;
+    transform: scale(1, 1);
+    width: 100%;
+    height: 100px;
+    transform-origin: center center;
+    border-width: 0px;
+    transition-property: none;
+}
+.intro, .article {
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#article-1, #article-3, #article-5, #article-7 {
+    background: rgb(111 187 184);
+    color: #FFF;
+    margin: 80px 80px 15px 30px;
+    padding: 20px 50px;
+}
+
+.article>img {
+    width: 400px;
+    height: 400px;
+    border-radius: 400px;
+}
+
+.article>h2 {
+    max-width: 70%;
+    font-size: 2.5em;
+    
+    font-family: "ITC Avant Garde Std Bk-EFVqoG5Y", sans-serif;
+}
+.article>h3 {
+    font-weight: 200;
+    font-size: 2.5em;
+}
+
+.article>p, .article>ul>li {
+    font-weight: bold;
+    font-family: "ITC Avant Garde Std Bk-EFVqoG5Y", sans-serif;
+}
+
+#article-1>img, #article-3>img, #article-5>img, #article-7>img {
+    position: absolute;
+    z-index: 2;
+    right: -150px;
+    top: -100px;
+}
+
+#article-2>img, #article-4>img, #article-6>img, #article-8>img {
+    position: absolute;
+    z-index: 2;
+    left: -150px;
+    top: -100px;
+}
+
+#article-2>h2, #article-4>h2, #article-6>h2, #article-8>h2, #article-2>h3, #article-4>h3, #article-6>h3, #article-8>h3 {
+    margin-left: 200px;
+}
+
+#article-2, #article-4, #article-6, #article-8 {
+    background: rgb(111 187 184);
+    color: #FFF;
+    margin: 80px 20px 15px 100px;
+    padding: 20px 50px;
+}
+
+.twenty-eighty {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.twenty-eighty>img {
+    object-fit: contain;
+    max-width: 20%;
+}
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
