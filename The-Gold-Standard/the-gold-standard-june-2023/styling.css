@@ -9,7 +9,6 @@
     font-family: 'ITC Avant Garde Std Bk-EFVqoG5Y';
     font-style: normal; 
     font-weight: 400; 
-    unicode-range: ;
     src: url('./fonts/94272e78-e922-4ccd-954c-2d1972c9bdd9/itc-itcavantgardestd-demi.woff') format('woff');
 }
 
@@ -113,4 +112,43 @@ a {
     display: flex;
     justify-content: center;
     padding: 20px 0px;
+}
+
+@media  screen and (max-width: 800px){
+    .article>h2 {
+        font-size: 2em;
+    }
+    .article>h3 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 18px;
+    }
+    
+}
+
+@media  screen and (max-height: 800px){
+    .article>h2 {
+        font-size: 2em;
+    }
+    .article>h3 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 18px;
+    }
+    
+}
+
+@media  screen and (max-height: 700px){
+    .article>h2 {
+        font-size: 1.5em;
+    }
+    .article>h3 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 18px;
+    }
 }
