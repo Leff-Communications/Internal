@@ -1,0 +1,285 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'leffs-picks',
+            issueAliasSlug: 'leffs-picks-january-2023',
+            issue: {"id":722070,"projectId":28163,"slug":"experience-63a0c0e9bdc76","name":"Leff's staff picks: January 2023","status":"published","creationDate":"2022-12-19T19:52:09.000Z","lastModifiedDate":"2022-12-20T16:33:44.000Z","deletionDate":null,"firstPublishedDate":"2022-12-20T17:28:35.000Z","wipExperienceVersionId":2861458,"publishedExperienceVersionId":2863908,"createdByMemberId":27874,"primaryIssueAliasId":1008512,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-63a0c0e96fd29.jpg","importLinkShared":0,"lastPublishedDate":"2022-12-20T17:28:35.000Z","lastModifiedByMemberId":27874,"lastPublishedByMemberId":27874,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"63a0c0e9-c1678b7d8ad65","title":"Leff's staff picks: January 2023"},
+            docVersion: {"id":2863908,"experienceId":722070,"slug":"experience-version-63a1f0c37c06c","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-63a1f0c37c06c.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-63a1f0c37c07c","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2022\/12\/20\/259436e14856fc6c580c0776b4168c53\/page-thumbnail.jpg?imageOpt=1&crop=765,638,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2022-12-20T17:28:35.000Z","modificationDate":"2022-12-20T17:28:35.000Z","publishedDate":"2022-12-20T17:28:35.000Z","committedByMemberId":27874,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-BkObl","cssFamilyName":"ITC Avant Garde Std Bk-cpYppPdI","cssFileURL":"fonts\/0b4d9c5c-cfa5-4ee8-baf8-b0ee95130979\/itc-itcavantgardestd-bkobl.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Demi","cssFamilyName":"ITC Avant Garde Std Bk-EFVqoG5Y","cssFileURL":"fonts\/ef010c1f-d1aa-4784-ade8-73ba0d790431\/itc-itcavantgardestd-demi.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-DemiObl","cssFamilyName":"ITC Avant Garde Std Bk-kdnQ7gZr","cssFileURL":"fonts\/bb2f6afd-b3e7-411a-a2ff-4e12de670c83\/itc-itcavantgardestd-demiobl.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Leff&#39;s staff picks: January 2023</title>
+
+
+
+
+    <meta property="og:title" content="Leff&#39;s staff picks: January 2023"/>
+        <meta property="og:image" content="media/259436e14856fc6c580c0776b4168c53/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Leff&#39;s staff picks: January 2023">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/259436e14856fc6c580c0776b4168c53/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-63a1f0c37c06c.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_63a1f0c37c06c",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/b70ffc9a0f9fea781adfd47e388d7d62/down-arrow-3-full.png" alt=""  class="image-component"/>
+<img src="media/88696395bc0a611ec852193e9a9726f5/yellow-gradient-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">With the holidays and all their joy and hubbub behind us, those of us in the Northern Hemisphere are stuck with just winter for the foreseeable future. There are no celebrations. There are no large get-togethers. There’s barely any sun. Is my seasonal depression showing?
+
+If you struggle to cultivate joy this time of year, I feel ya. But in recent years, I’ve gotten better about establishing some rituals that make the time feel special. Adriene Mishler, of Yoga with Adriene, does a 30-day yoga series every January that is a bright spot. And I’ve recently discovered that I enjoy doing puzzles—something I do not have the patience for if being outside is an option. 
+
+Below, we offer up suggestions of what to watch, read, and listen to 
+this month, as well as some more of the things that bring us joy on dark, 
+dreary days.
+</p>
+<img src="media/b33b2fed0a21660d5ab03895e7134c24/yellow-gradient-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Our favorite pick-me-ups for dreary days</p>
+<img src="media/ac82e8cec18be25034542795dff8e60d/down-arrow-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Tim Burton has a direct line to the weird, spooky part of my brain. I have been seriously enjoying the new Netflix series Wednesday based on the infamous character Wednesday Addams. Who better than Tim Burton to portray this tale of the dark, mysterious member of the Addams family? The actress who plays her doesn’t even blink the entire series. Wednesday is the perfect series to transition from the holiday spirit into a cool, wintery state 
+of mind.</p>
+<p class="text-component">Annie Hanigan
+marketing coordinator</p>
+<p class="text-component">Go to Annie’s pick</p>
+<img src="media/309f5c133ddf42e9a92a902e60f5e070/right-arrow-2-full.png" alt=""  class="image-component"/>
+<img src="media/c6fb802da6ff5a81e4cc061cc2d710e7/annie-h-pick-full.jpg" alt=""  class="image-component"/>
+<img src="media/555f3b44415eef80fafdca2a121bbeba/annie-headshot-full.jpg" alt=""  class="image-component"/>
+<img src="media/ac83d62b24a0c97210e1a7aac5145710/down-arrow-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Dan Levy’s The Big Brunch is the most delightful, heartwarming show I’ve watched in a long time. It brings all the good feels of brunch—cocktails, coffee, comfort food, camaraderie—and pairs it with healthy competition among truly good and talented people aiming to cook up the best brunch. You can’t help but to root for each and every one of the chefs. And the judges. The judges. If I didn’t love Dan Levy so much, I might say his co-judges Sohla El-Waylly and Will Guidara steal the show. You’ll cry, you’ll laugh, you’ll have to get up and make a snack. I fully plan on rewatching the whole thing. </p>
+<img src="media/42443a417bbc996b28a5891dd5fa9b21/right-arrow-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">Go to Annie’s pick</p>
+<p class="text-component">Annie Mullowney
+senior editor</p>
+<img src="media/1f768365bce6d8150514b4bffa0c36c9/annie-m-pick-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Claire Holland
+editor</p>
+<p class="text-component">For the past few years, I’ve used Rolling Stone’s “Best Albums of the Year” list as my springboard for discovering new artists, music, and genres. From bangers in foreign languages to highly acclaimed Top 40 hits, I always find new favorites and things I would never have heard otherwise. The full experience—almost 75 hours—is not for the faint of heart. But it can be a fun background goal to plug away at while you work—and I won’t judge you for skipping around.
+</p>
+<p class="text-component">Go to Claire’s pick</p>
+<img src="media/309f5c133ddf42e9a92a902e60f5e070/right-arrow-2-full.png" alt=""  class="image-component"/>
+<img src="media/4948f18230149ab577fd6a7c181d9de0/claire-h-pick-full.jpeg" alt=""  class="image-component"/>
+<img src="media/ac82e8cec18be25034542795dff8e60d/down-arrow-2-full.png" alt=""  class="image-component"/>
+<img src="media/58291c66d5805ad74b2f1e5959659e05/claire-h-headshot-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">“The edge is a shantytown filled with gold seekers. We are fugitives, and the law is skinny with hungry for us.” I dare you to get these sentences out of your head after you read Kevin Wilson’s newest fabulous novel, Now Is Not the Time to Panic. In the summer of 1996, two bored yet creative teenagers decide to hang out and make art together. What results from their masterpiece is indeed (despite the title) a panic, and it has major implications for both of them. My only complaint about this book is that I wanted to read more about the characters and the rest of their lives.</p>
+<img src="media/42443a417bbc996b28a5891dd5fa9b21/right-arrow-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">Go to Jen’s pick</p>
+<p class="text-component">Jen Bulat
+production director</p>
+<img src="media/8049403cbfa0931aca14e0c9ce16a118/jeb-b-pick-full.jpg" alt=""  class="image-component"/>
+<img src="media/7147530fb27222bbafd7de4fc73cd2a3/jen-headshot-full.jpeg" alt=""  class="image-component"/>
+<img src="media/fa46d3901f8ca885c5f8e1691ef53155/annie-m-headshot-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Mary Reddy
+senior advisor</p>
+<p class="text-component">If you like to make New Year’s resolutions, perhaps you’ll benefit from turning an avoidance goal into an approach goal. Per Carlbring, in the Department of Psychology at Stockholm University, suggests that “instead of stopping things, you should start doing things.” Or do you prefer to ponder whether it’s even worth trying?
+</p>
+<p class="text-component">Go to Mary’s pick</p>
+<img src="media/309f5c133ddf42e9a92a902e60f5e070/right-arrow-2-full.png" alt=""  class="image-component"/>
+<img src="media/cdd23a962c05e5919c9e2cd3776bc993/mary-r-pick-v2-full.jpg" alt=""  class="image-component"/>
+<img src="media/a45bade9ebf444b7513631b0591301f7/mary-headshot-full.jpeg" alt=""  class="image-component"/>
+<img src="media/ac82e8cec18be25034542795dff8e60d/down-arrow-2-full.png" alt=""  class="image-component"/>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">KC:
+Wearing my
+Giesswein slippers and eating mint chocolate chip 
+ice cream</p>
+<p class="text-component">Brittany:
+Watching Easy-Bake Battle</p>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Becky:
+Making chili</p>
+<p class="text-component">Morgan:
+Listening to 
+“Shower the People” by 
+James Taylor</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

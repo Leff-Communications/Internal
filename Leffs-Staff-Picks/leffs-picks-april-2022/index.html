@@ -1,0 +1,275 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'leffs-picks',
+            issueAliasSlug: 'leffs-picks-april-2022',
+            issue: {"id":609429,"projectId":28163,"slug":"experience-6243185983eeb","name":"Leff's staff picks: April 2022","status":"published","creationDate":"2022-03-29T14:31:53.000Z","lastModifiedDate":"2022-06-01T19:16:08.000Z","deletionDate":null,"firstPublishedDate":"2022-04-04T14:15:06.000Z","wipExperienceVersionId":2314840,"publishedExperienceVersionId":2327651,"createdByMemberId":27874,"primaryIssueAliasId":844486,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-624318591af40.jpg","importLinkShared":0,"lastPublishedDate":"2022-04-04T14:15:06.000Z","lastModifiedByMemberId":27874,"lastPublishedByMemberId":27874,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"62431859-ce53ea0ef5cc8","title":"Leff's staff picks: April 2022"},
+            docVersion: {"id":2327651,"experienceId":609429,"slug":"experience-version-624afd6acceaf","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-624afd6acceaf.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-624afd6accec9","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2022\/04\/04\/ef615a59da45f50ee1b00d8caa284bac\/page-thumbnail.jpg?imageOpt=1&crop=765,638,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2022-04-04T14:15:06.000Z","modificationDate":"2022-04-04T14:15:06.000Z","publishedDate":"2022-04-04T14:15:06.000Z","committedByMemberId":27874,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-BkObl","cssFamilyName":"ITC Avant Garde Std Bk-cpYppPdI","cssFileURL":"fonts\/0b4d9c5c-cfa5-4ee8-baf8-b0ee95130979\/itc-itcavantgardestd-bkobl.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Demi","cssFamilyName":"ITC Avant Garde Std Bk-EFVqoG5Y","cssFileURL":"fonts\/ef010c1f-d1aa-4784-ade8-73ba0d790431\/itc-itcavantgardestd-demi.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-DemiObl","cssFamilyName":"ITC Avant Garde Std Bk-kdnQ7gZr","cssFileURL":"fonts\/bb2f6afd-b3e7-411a-a2ff-4e12de670c83\/itc-itcavantgardestd-demiobl.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Leff&#39;s staff picks: April 2022</title>
+
+
+
+
+    <meta property="og:title" content="Leff&#39;s staff picks: April 2022"/>
+        <meta property="og:image" content="media/ef615a59da45f50ee1b00d8caa284bac/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Leff&#39;s staff picks: April 2022">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/ef615a59da45f50ee1b00d8caa284bac/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-624afd6acceaf.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_624afd6acceaf",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/b70ffc9a0f9fea781adfd47e388d7d62/down-arrow-3-full.png" alt=""  class="image-component"/>
+<img src="media/ac82e8cec18be25034542795dff8e60d/down-arrow-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Claire Holland
+editorial associate</p>
+<p class="text-component">Go to Claire’s pick</p>
+<img src="media/309f5c133ddf42e9a92a902e60f5e070/right-arrow-2-full.png" alt=""  class="image-component"/>
+<img src="media/ac83d62b24a0c97210e1a7aac5145710/down-arrow-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Equal to my love of words is my love of cake. But there’s a fundamental difference. I am for sure a writing snob. I’ve quit many a book that wasn’t up to snuff. I have never in my life quit a piece of cake. While all cakes are not created equal, all cakes are delicious in their own way. Boxed cake mix? Tastes like childhood. Grocery store cake? That frosting cannot be duplicated at home. But the very best cake? Bon Vivant Cakes in Chicago, owned by Emily Nejad. And as much as I love her cakes (both tastes and designs), I love her Instagram content almost as much. She brings cake content and inspiration, but she also brings commentary on politics, internet trends, shopping, trolls, and pretty much anything that amuses her. She’s funny, she’s smart, she’s hella talented, and she’s one of my favorite things about the internet.
+</p>
+<p class="text-component">Annie Mullowney
+senior editor</p>
+<p class="text-component">Go to Annie’s pick</p>
+<img src="media/309f5c133ddf42e9a92a902e60f5e070/right-arrow-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Caty Mick
+project manager</p>
+<p class="text-component">Go to Caty’s pick</p>
+<img src="media/42443a417bbc996b28a5891dd5fa9b21/right-arrow-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">I’m not normally a podcast person, but I binge-listened to all of Where Should We Begin? by Esther Perel over the course of a few days. Each episode is a recorded couples’ therapy session, and the full season offers a peek into a wide range of life experiences, family dynamics, and challenges, ranging from infidelity and sexuality to parenting and culture shock. The conversations are guided by Esther’s clear-eyed questions and observations and are punctuated by moments of intense revelation. Each episode is an exercise in empathy and reflection, both for the participants and for the listener. 
+</p>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Global Giving
+International Medical Corps
+International Rescue Committee
+The Kyiv Independent
+Razom
+</p>
+<img src="media/88696395bc0a611ec852193e9a9726f5/yellow-gradient-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Many of us have been either rewatching or rereading old favorites (looking at you, Queer Eye) or indulging in things we’d rather not admit (raise your hand if you’re deep into an American Idol obsession. Just me?). I blame the six long months of frigid weather in Chicago for robbing us of the ability to discover and delight in anything new and of substance. Still, a few of us have been enjoying things worth talking about. Below, we share these and a list of places to donate to to help Ukrainians, curated by my colleague Ugne.</p>
+<img src="media/b33b2fed0a21660d5ab03895e7134c24/yellow-gradient-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Where to donate to help Ukraine and Ukrainian refugees</p>
+<p class="text-component">The life of an eighteenth-century pirate is the impetus for this surprisingly inclusive and self-aware take on toxic masculinity. 
+
+Having abandoned his wealthy life (and wife) to play out adventure fantasies on the open seas, the “Gentleman Pirate” Stede Bonnet—a historical figure played by Rhys Darby—sets sail with an unconventional pirate-captaining approach. Bonnet’s “people-positive management style” first perplexes but soon wins over the misfit marauders under his command. It’s all fun and games for Bonnet until the real-world ramifications of piracy put the crew face to face with a slew of adversaries, including the famous Blackbeard, played by Taika Waititi (who pulls double duty as executive producer). 
+
+Though the first few episodes of Our Flag Means Death stand mainly to establish tone, once Bonnet and Blackbeard begin their odd-couple dalliance, the show moves more assuredly into a slow-burn examination of how transformative emotional honesty can be for those wounded by trauma. 
+
+</p>
+<img src="media/f9ceaae7240ac05fcf357dfb6e168fee/annies-pick-full.jpg" alt=""  class="image-component"/>
+<img src="media/382a31ebfed58648a87964616810709f/catys-pick-full.jpeg" alt=""  class="image-component"/>
+<img src="media/53ab9d8fc9114568a38eb83c62929b3f/claires-pick-full.jpeg" alt=""  class="image-component"/>
+<img src="media/964ff79b0cdad5504f9139a6edbd9db9/caty-full.jpeg" alt=""  class="image-component"/>
+<img src="media/3a2138f212c4f30ecd5747650c7b467b/claire-headshot-full.jpeg" alt=""  class="image-component"/>
+<img src="media/ac82e8cec18be25034542795dff8e60d/down-arrow-2-full.png" alt=""  class="image-component"/>
+<img src="media/ac82e8cec18be25034542795dff8e60d/down-arrow-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Scott Leff
+founder</p>
+<p class="text-component">My colleague Boris brought the album Lucifer on the Sofa by Spoon into the office, and it’s rock solid across the board. It’s odd to talk about a band that’s been around for 20 years hitting their stride, but they definitely sound reinvigorated. If you weren’t a fan before, check ‘em out. 
+</p>
+<p class="text-component">Go to Scott’s pick</p>
+<img src="media/42443a417bbc996b28a5891dd5fa9b21/right-arrow-3-full.png" alt=""  class="image-component"/>
+<img src="media/e3a8a325af8e2e303843ed6e559a398d/scotts-pick-full.jpeg" alt=""  class="image-component"/>
+<img src="media/a66be61cdf6f0c610e9c60b498c03b70/scott-01-full.png" alt=""  class="image-component"/>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Ukraine World
+Ukrainian Red Cross
+UNHCR
+UNICEF
+World Central Kitchen
+</p>
+<img src="media/f5b8547d1c5c4bf331296d0f7a1defa7/annie-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

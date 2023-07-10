@@ -1,0 +1,276 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'leffs-picks',
+            issueAliasSlug: 'leffs-picks-july-2022',
+            issue: {"id":647892,"projectId":28163,"slug":"experience-62bc60b960363","name":"Leff's staff picks: July 2022","status":"published","creationDate":"2022-06-29T14:24:57.000Z","lastModifiedDate":"2022-08-01T16:56:07.000Z","deletionDate":null,"firstPublishedDate":"2022-07-05T16:13:13.000Z","wipExperienceVersionId":2505124,"publishedExperienceVersionId":2563565,"createdByMemberId":27874,"primaryIssueAliasId":901134,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-62bc60b907350.jpg","importLinkShared":0,"lastPublishedDate":"2022-08-01T16:56:15.000Z","lastModifiedByMemberId":27874,"lastPublishedByMemberId":27874,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"62bc60b9-c7cc6a7e3fd88","title":"Leff's staff picks: July 2022"},
+            docVersion: {"id":2563565,"experienceId":647892,"slug":"experience-version-62e805af4a9cb","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-62e805af4a9cb.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-62e805af4a9e3","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2022\/08\/01\/664dccb8801e77fc0414bf1c9ddee870\/page-thumbnail.jpg?imageOpt=1&crop=765,638,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2022-08-01T16:56:15.000Z","modificationDate":"2022-08-01T16:56:15.000Z","publishedDate":"2022-08-01T16:56:15.000Z","committedByMemberId":27874,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-BkObl","cssFamilyName":"ITC Avant Garde Std Bk-cpYppPdI","cssFileURL":"fonts\/0b4d9c5c-cfa5-4ee8-baf8-b0ee95130979\/itc-itcavantgardestd-bkobl.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Demi","cssFamilyName":"ITC Avant Garde Std Bk-EFVqoG5Y","cssFileURL":"fonts\/ef010c1f-d1aa-4784-ade8-73ba0d790431\/itc-itcavantgardestd-demi.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-DemiObl","cssFamilyName":"ITC Avant Garde Std Bk-kdnQ7gZr","cssFileURL":"fonts\/bb2f6afd-b3e7-411a-a2ff-4e12de670c83\/itc-itcavantgardestd-demiobl.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Leff&#39;s staff picks: July 2022</title>
+
+
+
+
+    <meta property="og:title" content="Leff&#39;s staff picks: July 2022"/>
+        <meta property="og:image" content="media/664dccb8801e77fc0414bf1c9ddee870/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Leff&#39;s staff picks: July 2022">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/664dccb8801e77fc0414bf1c9ddee870/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-62e805af4a9cb.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_62e805af4a9cb",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/b70ffc9a0f9fea781adfd47e388d7d62/down-arrow-3-full.png" alt=""  class="image-component"/>
+<img src="media/ac82e8cec18be25034542795dff8e60d/down-arrow-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Jen Bulat
+production director</p>
+<p class="text-component">Go to Jen’s pick</p>
+<img src="media/309f5c133ddf42e9a92a902e60f5e070/right-arrow-2-full.png" alt=""  class="image-component"/>
+<img src="media/ac83d62b24a0c97210e1a7aac5145710/down-arrow-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">My fiancé and I are currently researching epic ideas for a honeymoon. This travel documentary about motorbiking in Vietnam from Tim and Fin has our wheels turning! Life on wheels is the life for us.
+</p>
+<p class="text-component">Clair Myatt
+project manager</p>
+<p class="text-component">Go to Clair’s pick</p>
+<img src="media/309f5c133ddf42e9a92a902e60f5e070/right-arrow-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Erik Delfin
+design associate</p>
+<p class="text-component">Go to Erik’s pick</p>
+<img src="media/42443a417bbc996b28a5891dd5fa9b21/right-arrow-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">It’s wrong to like someone who has killed three people, right? But I couldn’t help myself while reading Blood Sugar, Sascha Rothchild’s debut novel, about a woman named Ruby who finds herself on the wrong side of the law—for one murder she didn’t commit. Rothchild knows how to move the reader through a story, so much that I found myself saying “Just one more chapter!” late into the night. It’s a read that’s worth the lost sleep.
+
+
+</p>
+<img src="media/88696395bc0a611ec852193e9a9726f5/yellow-gradient-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Every weekend, my 16-year-old stepdaughter asks me what I’ve been listening to lately. Most weeks, I disappoint her by admitting I mostly just listened to The Daily and We Can Do Hard Things, my favorite podcasts. Thanks to my colleague KC, who recommends a soul radio show below, I might go up in her esteem ever so slightly next weekend. 
+
+And July is international Blondie and Debbie Harry month, so expect me to be playing Parallel Lines on repeat. It’s a perfect album for summer, in my opinion. We share our favorite Blondie tracks below, as well as picks for those of you planning your next vacation, reaching for a beach read, or looking for a gaming avenue into music.
+</p>
+<p class="text-component">Clone Hero is a free rhythm game based on the game Guitar Hero. Guitar Hero was a franchise of games released between 2005 and 2015 in which players played along to rock songs on a five-fretted plastic guitar. It was loved for its superb soundtracks including the likes of Eric Clapton, Guns N’ Roses, Jimi Hendrix, Nirvana, and the Red Hot Chili Peppers. The third installment in the series was most notorious for having players around the world attempt to beat each other’s scores on DragonForce’s “Through the Fire and Flames.” 
+
+The game proved timeless to fans. With the absence of a new version in many years, dedicated fans developed Clone Hero—a freeware title that allows players to hook up their old guitar controllers to their computer and play along to user-uploaded, custom songs. I was fortunate enough to run across an old Guitar Hero controller at my local Disc Replay. I can confidently say I haven’t had this much fun playing a video game since I was a kid.
+</p>
+<img src="media/331426b07f327dbc1f5bf79aa88739ed/clair-pick-full.jpeg" alt=""  class="image-component"/>
+<img src="media/3a365eb5310c1a438e3e8dc47c86fc7a/erik-pick-full.jpeg" alt=""  class="image-component"/>
+<img src="media/d7a10bc9343eb4c8384ea42604642f61/jen-pick-full.jpeg" alt=""  class="image-component"/>
+<img src="media/f0acdab1193188effff157aab4513969/erik-headshot-full.jpeg" alt=""  class="image-component"/>
+<img src="media/7147530fb27222bbafd7de4fc73cd2a3/jen-headshot-full.jpeg" alt=""  class="image-component"/>
+<img src="media/b33b2fed0a21660d5ab03895e7134c24/yellow-gradient-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Our favorite Blondie songs:</p>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Ross:
+“Dreaming”</p>
+<p class="text-component">Jake:
+“Hanging on 
+</p>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Clair:
+“Heart of Glass”</p>
+<p class="text-component">Scott:
+“Sunday Girl”</p>
+<img src="media/4eb900dd01df458ce09c8f12f666b2e5/clair-headshot-full.jpeg" alt=""  class="image-component"/>
+<p class="text-component">Soulection Radio transforms my dining room (aka my home office) into a swanky coffee shop instantly. Updated weekly, it’s a two-hour-long, LA-based radio show hosted by Joe Kay that satisfies all of my R&B, baile-pop, afro-beat cravings. The tempo is enough to keep you locked into whatever you’re working on without being too distracting. It’s also an ideal station for cleaning, cooking, hanging with friends . . . literally anything. I listen on SoundCloud, but it also streams on Apple Music if that’s more your vibe. Whenever I’m listening, it instantly puts me in a good mood. 
+</p>
+<img src="media/42443a417bbc996b28a5891dd5fa9b21/right-arrow-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">Go to KC’s pick</p>
+<p class="text-component">KC Esper
+editor</p>
+<img src="media/420184b95abc2a91df31f1021ac9ae94/kc-pick-full.jpeg" alt=""  class="image-component"/>
+<img src="media/d5b35be26d64b70456df507c185aeec5/kc-headshot-full.jpeg" alt=""  class="image-component"/>
+<img src="media/ac82e8cec18be25034542795dff8e60d/down-arrow-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">the Telephone”</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

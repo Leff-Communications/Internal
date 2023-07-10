@@ -1,0 +1,265 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'leffs-picks',
+            issueAliasSlug: 'leffs-picks-september-2019',
+            issue: {"id":268671,"projectId":28163,"slug":"experience-5d892f401c0c5","name":"Leff's staff picks: September edition 2019","status":"published","creationDate":"2019-09-23T20:46:56.000Z","lastModifiedDate":"2019-12-16T16:04:05.000Z","deletionDate":null,"firstPublishedDate":"2019-09-25T14:22:31.000Z","wipExperienceVersionId":849596,"publishedExperienceVersionId":857426,"createdByMemberId":14154,"primaryIssueAliasId":366413,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5d892f3f7aa45.jpg","importLinkShared":0,"lastPublishedDate":"2019-09-27T21:45:55.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-pf51144326b00","title":"Leff's staff picks: September edition 2019"},
+            docVersion: {"id":857426,"experienceId":268671,"slug":"experience-version-5d8e8312f0c2d","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5d8e8312f0c2d.js","themingBackgroundImageUri":null,"seoTitleKeywords":"Leffâ€™s staff picks: September edition 2019","seoMetaKeywords":"","seoMetaDescription":"Leffâ€™s staff picks: September edition 2019","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5d8e8312f0cfe","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2019\/09\/27\/617448e70dab327b90bf68032a46c544\/page-thumbnail.jpg?imageOpt=1&crop=765,638,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2019-09-27T21:45:55.000Z","modificationDate":"2019-09-27T21:45:55.000Z","publishedDate":"2019-09-27T21:45:54.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-BkObl","cssFamilyName":"ITC Avant Garde Std Bk-cpYppPdI","cssFileURL":"fonts\/0b4d9c5c-cfa5-4ee8-baf8-b0ee95130979\/itc-itcavantgardestd-bkobl.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Demi","cssFamilyName":"ITC Avant Garde Std Bk-EFVqoG5Y","cssFileURL":"fonts\/ef010c1f-d1aa-4784-ade8-73ba0d790431\/itc-itcavantgardestd-demi.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-DemiObl","cssFamilyName":"ITC Avant Garde Std Bk-kdnQ7gZr","cssFileURL":"fonts\/bb2f6afd-b3e7-411a-a2ff-4e12de670c83\/itc-itcavantgardestd-demiobl.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Leff&#39;s staff picks: September edition 2019 Leffâ€™s staff picks: September edition 2019</title>
+
+
+
+        <meta name="description" content="Leffâ€™s staff picks: September edition 2019"/>
+
+    <meta property="og:title" content="Leff&#39;s staff picks: September edition 2019"/>
+        <meta property="og:image" content="media/617448e70dab327b90bf68032a46c544/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Leff&#39;s staff picks: September edition 2019">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/617448e70dab327b90bf68032a46c544/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5d8e8312f0c2d.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5d8e8312f0c2d",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/88696395bc0a611ec852193e9a9726f5/yellow-gradient-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">It’s been an excellent month. Many of us discovered the Impossible Whopper at Burger King and can now think about little else. The Emmys also aired this past weekend, and Phoebe Waller-Bridge of Fleabag was recognized as the writing (and acting and creating) genius that she is. Below are a few of the other things we’ve enjoyed lately. </p>
+<img src="media/b70ffc9a0f9fea781adfd47e388d7d62/down-arrow-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">Go to Rachel's pick</p>
+<img src="media/309f5c133ddf42e9a92a902e60f5e070/right-arrow-2-full.png" alt=""  class="image-component"/>
+<img src="media/ac82e8cec18be25034542795dff8e60d/down-arrow-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Galina
+editorial
+associate</p>
+<p class="text-component">We try especially hard to dodge clichés, but some are almost impossible to avoid. Driving that point home is this 60-second compilation of joke archetypes in modern comedies by comedian and screenwriter Nicole Silverberg, which is both spot on and appropriately unfunny. The worst part? I think I'm a perpetrator. If cringing and shame were combined into a sound effect, cue it now.</p>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Derry Girls, season 2 and Stranger Things, season 3 
+– Katie</p>
+<p class="text-component">Dark, season 2 – Justin</p>
+<p class="text-component">The Righteous Gemstones, season 1 
+– David</p>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<img src="media/b33b2fed0a21660d5ab03895e7134c24/yellow-gradient-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Annie 
+editor</p>
+<p class="text-component">This short-ish quiz to discover your creative type is super entertaining. Learning your type—Thinker, Maker, Visionary, etc.—and about your creative process is fine, but my favorite thing about this site is definitely the animations. They're bizarre and charming and even a little uncomfortable in how tactile they are.</p>
+<p class="text-component">Mimi
+editor</p>
+<p class="text-component">Good intentions and the lack of firm guidance (and strategic pruning) can make a panel discussion unfocused, boring, and insight-free. 
+This article gives a solid starter list of elements and practices for a better-than-average panel.</p>
+<p class="text-component">Go to Mimi's pick</p>
+<img src="media/309f5c133ddf42e9a92a902e60f5e070/right-arrow-2-full.png" alt=""  class="image-component"/>
+<p class="text-component"></p>
+<p class="text-component">Rachel
+editor</p>
+<p class="text-component">Go to Annie's pick</p>
+<img src="media/42443a417bbc996b28a5891dd5fa9b21/right-arrow-3-full.png" alt=""  class="image-component"/>
+<img src="media/ac82e8cec18be25034542795dff8e60d/down-arrow-2-full.png" alt=""  class="image-component"/>
+<img src="media/ac83d62b24a0c97210e1a7aac5145710/down-arrow-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Go to Galina's pick</p>
+<img src="media/42443a417bbc996b28a5891dd5fa9b21/right-arrow-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">Former Chicago Mayor Rahm Emmanuel’s three new housing projects are a testament to the idea that cities can figure out how to provide both affordable (or heavily subsidized) housing and community without sacrificing beauty and architecture. The developments are a stark departure from the 1970s-style housing projects which were all cement and no soul. Plus, each development includes a library, which made the reader in me smile.</p>
+<p class="text-component">Best TV we watched this summer:</p>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Love Island, season 5; GLOW, season 3; all of Fleabag 
+– Delilah</p>
+<img src="media/28f16441ad3ae7131a0f41fc800987cd/rachel-full.png" alt=""  class="image-component"/>
+<img src="media/ff7bd87db9283ad8cb0b4dcd81e34ad6/galina-full.png" alt=""  class="image-component"/>
+<img src="media/97ff692b764a14d6272756f9a6243663/mimi-full.png" alt=""  class="image-component"/>
+<img src="media/389b643a79c1dc5125b0f26d1ce0af81/annie-full.png" alt=""  class="image-component"/>
+<img src="media/a8ebae1d4e52a6a29815ec840011b3cf/lead-720-405-full.jpg" alt=""  class="image-component"/>
+<img src="media/3161f7e7a6cb7b742ad993fe3ac71984/creative-types-full.png" alt=""  class="image-component"/>
+<img src="media/21fff0acab638b2d75134d1fd948a21b/c0cqhqen-400x400-full.jpg" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

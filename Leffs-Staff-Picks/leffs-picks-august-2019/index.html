@@ -1,0 +1,263 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'leffs-picks',
+            issueAliasSlug: 'leffs-picks-august-2019',
+            issue: {"id":260429,"projectId":28163,"slug":"experience-5d66ac91304f6","name":"Leff's staff picks: August edition 2019","status":"published","creationDate":"2019-08-28T16:32:17.000Z","lastModifiedDate":"2020-01-21T17:31:05.000Z","deletionDate":null,"firstPublishedDate":"2019-08-29T15:51:27.000Z","wipExperienceVersionId":818383,"publishedExperienceVersionId":820232,"createdByMemberId":14154,"primaryIssueAliasId":355360,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5d66ac90bb3ec.jpg","importLinkShared":0,"lastPublishedDate":"2019-08-29T16:42:47.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-pfbccc289f878","title":"Leff's staff picks: August edition 2019"},
+            docVersion: {"id":820232,"experienceId":260429,"slug":"experience-version-5d6800876099c","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5d6800876099c.js","themingBackgroundImageUri":null,"seoTitleKeywords":"Leffâ€™s staff picks: August edition 2019","seoMetaKeywords":"","seoMetaDescription":"Leffâ€™s staff picks: August edition 2019","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5d68008760a6c","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2019\/08\/29\/6a07d008aef2b244a36512ad2000e674\/page-thumbnail.jpg?imageOpt=1&crop=765,638,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2019-08-29T16:42:47.000Z","modificationDate":"2019-08-29T16:42:47.000Z","publishedDate":"2019-08-29T16:42:47.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-BkObl","cssFamilyName":"ITC Avant Garde Std Bk-cpYppPdI","cssFileURL":"fonts\/0b4d9c5c-cfa5-4ee8-baf8-b0ee95130979\/itc-itcavantgardestd-bkobl.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Demi","cssFamilyName":"ITC Avant Garde Std Bk-EFVqoG5Y","cssFileURL":"fonts\/ef010c1f-d1aa-4784-ade8-73ba0d790431\/itc-itcavantgardestd-demi.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Leff&#39;s staff picks: August edition 2019 Leffâ€™s staff picks: August edition 2019</title>
+
+
+
+        <meta name="description" content="Leffâ€™s staff picks: August edition 2019"/>
+
+    <meta property="og:title" content="Leff&#39;s staff picks: August edition 2019"/>
+        <meta property="og:image" content="media/6a07d008aef2b244a36512ad2000e674/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Leff&#39;s staff picks: August edition 2019">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/6a07d008aef2b244a36512ad2000e674/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5d6800876099c.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5d6800876099c",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/88696395bc0a611ec852193e9a9726f5/yellow-gradient-1-full.png" alt=""  class="image-component"/>
+<img src="media/b70ffc9a0f9fea781adfd47e388d7d62/down-arrow-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">Go to Annie’s pick</p>
+<img src="media/309f5c133ddf42e9a92a902e60f5e070/right-arrow-2-full.png" alt=""  class="image-component"/>
+<img src="media/ac82e8cec18be25034542795dff8e60d/down-arrow-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Alia
+director, accounts and strategy</p>
+<p class="text-component">Do people still use Tumblr? I’m not sure. But Design Clever, a Tumblr 
+blog started in 2007 by two designers, has an active community of creatives who share their work for all to enjoy. The designers curate 
+really interesting, impressive, and stylish designs that can serve as inspiration—or just a reminder to appreciate the talent that’s out there.</p>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Good Thing
+–Leon Bridges</p>
+<p class="text-component">What’s Goin On
+–Marvin Gaye</p>
+<p class="text-component">Bill Withers Live at Carnegie Hall –Bill Withers</p>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<img src="media/b33b2fed0a21660d5ab03895e7134c24/yellow-gradient-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Brittany
+senior editor</p>
+<p class="text-component">I loved this interview on JSTOR with a map collector who focuses 
+on “persuasive cartography”: maps that were made not to detail geography but to influence people. How he fell into the hobby and mounted his collection online with Cornell University is fascinating, but 
+the best part is definitely the maps themselves. Leff talks a lot about 
+the importance of visuals, and these maps are proof of how a medium that is thought of as objective truth—cartography—can be used 
+to persuade. Clearly, visualization is one of the most powerful tools 
+of humankind.</p>
+<p class="text-component">Go to Brittany’s pick</p>
+<img src="media/309f5c133ddf42e9a92a902e60f5e070/right-arrow-2-full.png" alt=""  class="image-component"/>
+<p class="text-component"></p>
+<p class="text-component">Annie
+editor</p>
+<img src="media/ac83d62b24a0c97210e1a7aac5145710/down-arrow-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Go to Alia’s pick</p>
+<img src="media/42443a417bbc996b28a5891dd5fa9b21/right-arrow-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">I was recently researching agriculture and was reminded of National Geographic’s “A five-step plan to feed the world” interactive from a few years ago. While it somewhat oversimplifies the steps we need to take to feed nine billion people by 2050, it’s a useful overview for the layperson who is worried about how we might go about solving one of humanity’s most pressing threats (raises hand). The graphic and interactive elements do a nice job of illuminating the opportunities and primary challenges.</p>
+<img src="media/bb9df0eda2ca1692042b57fff3516eb1/persuasive-cartography-1050x700-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Records on the turntable this month: </p>
+<img src="media/f86d6610bb5127b593887e061293afda/line-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Aretha Arrives –Aretha Franklin</p>
+<p class="text-component">One of our mantras around here has long been “everybody loves maps.” And it’s true; a map can go a long way toward making data real and driving home a message. This month, many of us have been reflecting 
+on the power of design and how visuals can be used to influence 
+and inspire. </p>
+<img src="media/389b643a79c1dc5125b0f26d1ce0af81/annie-full.png" alt=""  class="image-component"/>
+<img src="media/f8b4183091451d9b84890274da416c8b/alia-full.png" alt=""  class="image-component"/>
+<img src="media/3159c69f6ced8463cd67d09d9723a99c/screen-shot-2019-08-28-at-11-52-03-am-full.png" alt=""  class="image-component"/>
+<img src="media/0ff33298e9dbc30544b3147f1dbdca51/brittany-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
