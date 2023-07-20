@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'ITC Avant Garde Std Bk-y4IYhiFJ';
+    font-style: normal; 
+    font-weight: 400; 
+    src: url('./fonts/ec216a08-3936-4533-bd1d-909774810dac/itc-itcavantgardestd-bk.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Std Bk-EFVqoG5Y';
+    font-style: normal; 
+    font-weight: 400; 
+    src: url('./fonts/94272e78-e922-4ccd-954c-2d1972c9bdd9/itc-itcavantgardestd-demi.woff') format('woff');
+}
+
+body {
+    width: auto;
+    font-family: "ITC Avant Garde Std Bk-y4IYhiFJ", sans-serif;
+}
+
+.container {
+    max-width: 1150px;
+}
+
+.intro {
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.pick {
+    position: relative;
+    overflow: hidden;
+}
+#pick-1, #pick-3 {
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%,rgb(84, 175, 171) 50%, rgb(255, 255, 255) 100%);
+}
+
+.intro-text, .pick>p {
+    margin: 50px;
+
+}
+
+.intro-background {
+    position: absolute;
+    top: -300px;
+    min-height: 500px;
+    width: 2000px;
+    transform: rotate(352deg) translateX(-200px);
+    background: linear-gradient(#FFF, #e4e22b);
+    z-index: -1;
+}
