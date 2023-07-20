@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'ITC Avant Garde Std Bk-y4IYhiFJ';
+    font-style: normal; 
+    font-weight: 400; 
+    src: url('./fonts/ec216a08-3936-4533-bd1d-909774810dac/itc-itcavantgardestd-bk.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Std Bk-EFVqoG5Y';
+    font-style: normal; 
+    font-weight: 400; 
+    src: url('./fonts/94272e78-e922-4ccd-954c-2d1972c9bdd9/itc-itcavantgardestd-demi.woff') format('woff');
+}
+
+body {
+    width: auto;
+    font-family: "ITC Avant Garde Std Bk-y4IYhiFJ", sans-serif;
+}
+
+.portrait {
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
+}
+
+.portrait>img {
+    max-width: 55%;
+    margin: 50px;
+}
+.bio {
+    max-width: 30%;
+    min-height: 100px;
+    display: flex;
+    margin-top: 150px;
+}
+.bio>div {
+    display: flex;
+    flex-direction: column;
+    max-width: 12ch;
+}
+.bio>img {
+    object-fit: contain;
+    height: 100px;
+}
+
+.bio>div>h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.bio>div>h3 {
+    font-weight: normal;
+    font-size: 18px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.orange>h3, .orange>h2 {
+    color: #e65139;
+}
+
+.white>h3, .white>h2 {
+    color: #FFF;
+}
+
+.container {
+    max-width: 1150px;
+}
+
+.intro {
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.pick {
+    position: relative;
+    overflow: hidden;
+}
+#pick-2, #pick-4 {
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%,rgb(84, 175, 171) 30%,rgb(84, 175, 171) 70%, rgb(255, 255, 255) 100%);
+}
+
+.intro-text, .pick>p, .pick>h2 {
+    margin: 50px;
+
+}
+
+.intro-background {
+    position: absolute;
+    top: -300px;
+    min-height: 500px;
+    width: 2000px;
+    transform: rotate(352deg) translateX(-200px);
+    background: linear-gradient(#FFF, #e4e22b);
+    z-index: -1;
+}
