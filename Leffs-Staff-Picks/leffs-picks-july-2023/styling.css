@@ -97,6 +97,9 @@ body {
     margin: 50px;
 
 }
+.intro-text {
+    margin-bottom: 75px;
+}
 
 .intro-background {
     position: absolute;
@@ -132,4 +135,14 @@ body {
 .picks-grid>div {
     border-top: #e65139 2px solid;
     padding-top: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    .intro-background {
+        top: 0;
+        bottom: 100px;
+        transform: rotate(355deg) translateX(-200px);
+        background: linear-gradient(#FFF, #e4e22b);
+        z-index: -1;
+    }
 }
