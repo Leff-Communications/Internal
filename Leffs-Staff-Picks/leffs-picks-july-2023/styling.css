@@ -17,6 +17,10 @@ body {
     font-family: "ITC Avant Garde Std Bk-y4IYhiFJ", sans-serif;
 }
 
+.divider {
+    position: relative;
+}
+
 .portrait {
     display: flex;
     margin: 50px;
@@ -43,11 +47,17 @@ body {
     height: 100px;
 }
 
-.bio>div>h2 {
+.bio>div>h2, .picks-grid>div>h3 {
     font-weight: bold;
     font-size: 20px;
     margin-block-start: 0em;
     margin-block-end: 0em;
+}
+.outtro-text>h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-block-start: 0em;
+    margin-block-end: 4.5em;
 }
 
 .bio>div>h3 {
@@ -72,7 +82,7 @@ body {
 .intro {
     position: relative;
     overflow: hidden;
-    min-height: 400px;
+    min-height: 500px;
 }
 
 .pick {
@@ -91,9 +101,35 @@ body {
 .intro-background {
     position: absolute;
     top: -300px;
-    min-height: 500px;
+    min-height: 650px;
     width: 2000px;
     transform: rotate(352deg) translateX(-200px);
     background: linear-gradient(#FFF, #e4e22b);
     z-index: -1;
+}
+
+.outtro {
+    position: relative;
+    margin: 50px;
+    padding-top: 125px;
+}
+
+.outtro-background {
+    position: absolute;
+    top: 200px;
+    min-height: 650px;
+    width: 2000px;
+    transform: rotate(12deg) translateX(-200px);
+    background: linear-gradient(#e4e22b, #FFF);
+    z-index: -1;
+}
+.picks-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.picks-grid>div {
+    border-top: #e65139 2px solid;
+    padding-top: 50px;
 }
