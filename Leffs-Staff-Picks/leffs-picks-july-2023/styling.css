@@ -146,3 +146,17 @@ body {
         z-index: -1;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .portrait {
+        margin: 50px;
+    }
+
+    .portrait>img {
+        max-width: 200px;
+    }
+
+    .bio>img {
+        height: 75px;
+    }
+}
