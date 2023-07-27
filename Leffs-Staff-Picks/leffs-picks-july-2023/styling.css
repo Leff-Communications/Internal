@@ -147,13 +147,14 @@ body {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .portrait {
         margin: 50px;
+        align-items: center;
     }
 
     .portrait>img {
-        max-width: 200px;
+        max-width: 100%;
     }
 
     .bio>img {
@@ -164,5 +165,8 @@ body {
     }
     #pick-2>.portrait, #pick-4>.portrait {
         flex-direction: column;
+    }
+    .bio {
+        margin-top: 50px;
     }
 }
