@@ -169,4 +169,7 @@ body {
     .bio {
         margin-top: 50px;
     }
+    .picks-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
