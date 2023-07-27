@@ -159,4 +159,10 @@ body {
     .bio>img {
         height: 75px;
     }
+    #pick-1, #pick-3 {
+        flex-direction: column-reverse;
+    }
+    #pick-2, pick-4 {
+        flex-direction: column;
+    }
 }
