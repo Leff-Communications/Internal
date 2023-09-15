@@ -146,3 +146,30 @@ body {
         z-index: -1;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .portrait {
+        margin: 50px;
+        align-items: center;
+    }
+
+    .portrait>img {
+        max-width: 100%;
+    }
+
+    .bio>img {
+        height: 75px;
+    }
+    #pick-1>.portrait, #pick-3>.portrait {
+        flex-direction: column-reverse;
+    }
+    #pick-2>.portrait, #pick-4>.portrait {
+        flex-direction: column;
+    }
+    .bio {
+        margin-top: 50px;
+    }
+    .picks-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
