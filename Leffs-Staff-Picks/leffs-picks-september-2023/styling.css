@@ -1,0 +1,38 @@
+h2 {
+    color: #54afab;
+    font-weight: 200;
+}
+
+h3 {
+    color: black;
+    font-weight: 400;
+}
+
+.header>img {
+    max-width: 50px;
+    object-fit: contain;
+    margin: 25px;
+}
+
+.title {
+    margin-left: 50px;
+    position: relative;
+}
+
+.title>h1 {
+    font-size: 3em;
+    margin-block-start: 0;
+}
+
+.title>h2 {
+    font-size: 1.5em;
+    margin-block-end: 0;
+}
+
+#title-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 250px;
+    object-fit: contain;
+}
