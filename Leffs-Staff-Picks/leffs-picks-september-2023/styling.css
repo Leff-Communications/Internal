@@ -97,6 +97,7 @@ h3 {
 
 #pick-1>.pick-title>img, #pick-3>.pick-title>img {
     max-width: 600px;
+    width: 80%;
     z-index: -1;
     position: absolute;
     object-fit: contain;
@@ -106,6 +107,7 @@ h3 {
 
 #pick-2>.pick-title>img, #pick-4>.pick-title>img {
     max-width: 700px;
+    width: 80%;
     min-height: 415px;
     z-index: -1;
     position: absolute;
