@@ -17,10 +17,11 @@ h3 {
 .title {
     margin-left: 50px;
     position: relative;
+    margin-bottom: 100px;
 }
 
 .title>h1 {
-    font-size: 3em;
+    font-size: 4em;
     margin-block-start: 0;
 }
 
@@ -31,8 +32,129 @@ h3 {
 
 #title-img {
     position: absolute;
-    bottom: 0;
+    z-index: -1;
+    bottom: -20px;
     right: 0;
-    max-width: 250px;
+    max-width: 60%;
     object-fit: contain;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+.intro>a {
+    margin: 0 25px;
+}
+
+.intro>a>img {
+
+    max-width: 25px;
+    object-fit: contain;
+}
+.intro-text>p {
+    margin-block-start: 0;
+}
+
+.pick-title {
+    position: relative;
+}
+
+#pick-1>.pick-title {
+    min-height: 410px;
+}
+
+#pick-2>.pick-title {
+    min-height: 415px;
+}
+#pick-3>.pick-title {
+    min-height: 400px;
+}
+
+#pick-4>.pick-title {
+    min-height: 425px;
+}
+
+#pick-1>.pick-title>div, #pick-3>.pick-title>div {
+    position: absolute;
+    width: 50%;
+    background: #fff;
+    right: 0;
+    bottom: 50%;
+    padding-left: 20px;
+}
+
+#pick-2>.pick-title>div, #pick-4>.pick-title>div {
+    position: absolute;
+    background: #fff;
+    left: 10%;
+    bottom: 50%;
+    padding-left: 20px;
+    
+    padding-right: 20px;
+}
+
+#pick-1>.pick-title>img, #pick-3>.pick-title>img {
+    max-width: 600px;
+    z-index: -1;
+    position: absolute;
+    object-fit: contain;
+    left: 0;
+    top: 0;
+}
+
+#pick-2>.pick-title>img, #pick-4>.pick-title>img {
+    max-width: 700px;
+    min-height: 415px;
+    z-index: -1;
+    position: absolute;
+    object-fit: contain;
+    right: 0;
+    top: 0;
+}
+
+.pick-text {
+    display: flex;
+    padding-right: 75px;
+}
+
+.navigation {
+    margin: 1em 25px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.pick-choice {
+    width: 15px;
+    min-height: 15px;
+    margin: 5px;
+    
+    border-radius: 15px;
+    border: #000 1px solid;
+}
+
+.pick-choice:hover {
+    background: #54afab;
+    border: #54afab 1px solid;
+}
+.pick-choice-selected {
+    width: 15px;
+    min-height: 15px;
+    margin: 5px;
+    
+    border-radius: 15px;
+    background: #54afab;
+    border: #54afab 1px solid;
+}
+
+.quick-picks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.quick-picks>div {
+    padding:20px;
 }
