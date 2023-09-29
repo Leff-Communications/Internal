@@ -3,3 +3,96 @@
     padding: 10px;
     background: #fff;
 }
+
+.title {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.title>img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.title-text {
+    background: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 50px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.pick {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#pick-1>img {
+    width: 80%;
+    margin-left: auto;
+    position: relative;
+    display: block;
+}
+
+#pick-2>img {
+    width: 100%;
+    position: relative;
+}
+
+#pick-1>.pick-info {
+    position: absolute;
+    bottom: 50px;
+    left: 0%;
+    width: 80%;
+}
+
+#pick-2>.pick-info {
+    position: absolute;
+    bottom: 50px;
+    right: 0%;
+    transform: translateX(50%);
+    width: 80%;
+}
+
+#pick-3>.pick-info {
+    width: 80%;
+}
+
+#pick-3>img {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+#pick-4>img {
+    width: 60%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+}
+
+#pick-4>.pick-info {
+    position: absolute;
+    bottom: 50px;
+    left: 0%;
+    width: 80%;
+}
+
+
+#pick-5>.pick-info {
+    position: absolute;
+    bottom: 50px;
+    right: 0%;
+    width: 80%;
+}
+
+#pick-5>img {
+    width: 80%;
+    position: relative;
+    display: block;
+}
