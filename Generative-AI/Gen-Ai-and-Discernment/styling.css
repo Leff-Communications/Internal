@@ -1,0 +1,50 @@
+.title {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.title>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+}
+
+.title>h1 {
+    font-size: 30px;
+    color: #ed6c4d;
+    font-weight: 700;
+}
+
+.title>h2 {
+    font-size: 20px;
+    color: #54afab;
+    font-weight: 400;
+}
+
+.morgan-pass {
+    color: #fff;
+    background: #ed6c4d;
+}
+
+.morgan-comment {
+    background: #f7c3b7;
+    font-size: .8rem;
+}
+
+.chat-pass {
+    background: #b9c441;
+}
+
+.chat-comment {
+    background: #e3e7b4;
+    font-size: .8rem;
+}
+
+.accent {
+    color: #54afab;
+}
